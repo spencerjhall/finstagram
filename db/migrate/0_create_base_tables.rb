@@ -1,8 +1,8 @@
-class CreateBaseTables < ActiveRecord::Migration
+class CreateBaseTables < ActiveRecord::Migration[4.2]
 
   def change
     create_table :users do |t|
-      t.string :username
+      t.string :usernamebun
       t.string :avatar_url
       t.string :email
       t.string :password
